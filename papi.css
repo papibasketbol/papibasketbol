@@ -1,0 +1,11 @@
+.link-card:hover {
+    transform: translateY(-5px); /* Yukarı doğru hafif zıplama */
+    background: #ff8c00; /* Arka plan turuncu olsun */
+    color: #000; /* Yazı siyah olsun */
+    box-shadow: 0px 10px 20px rgba(255, 140, 0, 0.3); /* Turuncu parlama efekti */
+}
+
+/* İkonlara biraz boşluk bırakalım */
+.link-card i {
+    margin-right: 10px;
+}
