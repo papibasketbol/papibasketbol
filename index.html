@@ -1,125 +1,57 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PapiBasketball | Link-in-Bio</title>
-    <style>
-        /* GENEL AYARLAR */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #1a1a1a; /* Koyu zemin */
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 20px;
-            margin: 0;
-        }
-
-        /* PROFİL ALANI */
-        .profile {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .profile img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 3px solid #ff8c00; /* Basketbol turuncusu */
-            object-fit: cover;
-        }
-        .profile h1 {
-            font-size: 24px;
-            margin: 10px 0 5px;
-            color: #ff8c00;
-        }
-        .profile p {
-            font-size: 14px;
-            color: #ccc;
-        }
-
-        /* BUTONLAR */
-        .links {
-            width: 100%;
-            max-width: 400px;
-        }
-        .link-card {
-            background: #333;
-            display: block;
-            text-align: center;
-            padding: 15px;
-            margin-bottom: 15px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            border-radius: 12px;
-            transition: transform 0.2s, background 0.2s;
-            border-left: 5px solid #ff8c00;
-        }
-        .link-card:hover {
-            transform: scale(1.05);
-            background: #444;
-        }
-
-        /* ÖZEL ETİKETLER */
-        .badge {
-            font-size: 10px;
-            background: #ff8c00;
-            padding: 2px 8px;
-            border-radius: 10px;
-            margin-left: 8px;
-            vertical-align: middle;
-        }
-        /* Basketbol Topu Animasyonu - Dev Boyut */
-.basketball-animation {
-    position: fixed;
-    top: 40%; /* Biraz daha yukarı aldık */
-    left: -200px; /* Daha büyük olduğu için daha geriden başlasın */
-    font-size: 150px; /* BURAYI BÜYÜTTÜK (150px yaptık) */
-    z-index: 9999;
-    animation: rollAndPass 2.5s ease-in-out forwards; /* Biraz daha hızlı geçsin */
-    pointer-events: none;
-    filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.5)); /* Topun altına gölge ekledik */
-}
-
-@keyframes rollAndPass {
-    0% {
-        left: -200px;
-        transform: rotate(0deg);
-    }
-    100% {
-        left: 120%;
-        transform: rotate(1080deg); /* Daha çok dönsün */
-    }
-}
-    </style>
+    <title>PapiBasketball | Official Link-in-Bio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="papi.css">
 </head>
 <body>
+
     <div class="basketball-animation">🏀</div>
 
-   <div class="profile">
+  <div class="profile">
     <img src="profil.jpg" alt="PapiBasketball">
     <h1>@PapiBasketball</h1>
-    <p>🏀 Eğitim | Komedi | Basketbol Yaşam Tarzı</p>
+    <p>🏀 Basketbol Gelişim Uzmanı | Atletik Performans & Kondisyoner</p>
 </div>
+
     <div class="links">
-    <a href="https://instagram.com/papibasketball" class="link-card" target="_blank">
-        <i class="fab fa-instagram"></i> Instagram'da Takip Et
-    </a>
-    
-    <a href="https://tiktok.com/@papibasketball" class="link-card" target="_blank">
-        <i class="fab fa-tiktok"></i> TikTok'ta Smaç Videoları
-    </a>
+        <a href="https://instagram.com/papibasketbol" class="link-card" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram'da Takip Et
+        </a>
+        
+        <a href="https://youtube.com/@papibasketball?si=42xm6RsJs8PCmw17" class="link-card yt-color" target="_blank">
+            <i class="fab fa-youtube"></i> YouTube Kanalıma Abone Ol
+        </a>
 
-    <a href="#" class="link-card" target="_blank">
-        <i class="fas fa-basketball-ball"></i> Şut Geliştirme Programı
-    </a>
+        <hr style="border: 0; border-top: 1px solid #333; margin: 20px 0;">
 
-    <a href="#" class="link-card" target="_blank">
-        <i class="fas fa-shopping-cart"></i> Favori Ekipmanlarım
-    </a>
-</div>
+        <a href="#" class="link-card prog-card">
+            <i class="fas fa-hand-holding-ball"></i> Top Kontrolü Geliştirme
+        </a>
+
+        <a href="#" class="link-card prog-card">
+            <i class="fas fa-basketball-ball"></i> Şut Geliştirme Programı
+        </a>
+
+        <a href="atletizm.html" class="link-card prog-card">
+    <i class="fas fa-running"></i> Atletizm Geliştirme Programı
+       </a> 
+
+        <a href="#" class="link-card" target="_blank">
+            <i class="fas fa-shopping-cart"></i> Favori Ekipmanlarım
+        </a>
+
+        <a href="mailto:iletisim@mail.com" class="link-card contact-btn">
+            <i class="fas fa-envelope"></i> İş Birliği & İletişim
+        </a>
+    </div>
+
+    <div class="footer">
+        © 2026 PapiBasketball. All Rights Reserved.
+    </div>
+
 </body>
 </html>
