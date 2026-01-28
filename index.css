@@ -1,11 +1,64 @@
-.link-card:hover {
-    transform: translateY(-5px); /* Yukarı doğru hafif zıplama */
-    background: #ff8c00; /* Arka plan turuncu olsun */
-    color: #000; /* Yazı siyah olsun */
-    box-shadow: 0px 10px 20px rgba(255, 140, 0, 0.3); /* Turuncu parlama efekti */
+/* GENEL TASARIM */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 0;
+    overflow-x: hidden;
 }
 
-/* İkonlara biraz boşluk bırakalım */
-.link-card i {
-    margin-right: 10px;
+/* BASKETBOL TOPU ANİMASYONU */
+.basketball-animation {
+    position: fixed;
+    top: 40%;
+    left: -250px;
+    font-size: 150px;
+    z-index: 9999;
+    animation: rollAndPass 2.5s ease-in-out forwards;
+    pointer-events: none;
+    filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.8));
 }
+
+@keyframes rollAndPass {
+    0% { left: -250px; transform: rotate(0deg); }
+    100% { left: 120%; transform: rotate(1080deg); }
+}
+
+/* PROFİL */
+.profile img {
+    width: 120px; height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ff7b00;
+    box-shadow: 0px 0px 20px rgba(255, 140, 0, 0.3);
+}
+.profile h1 { color: #ff8c00; margin-top: 15px; text-transform: uppercase; }
+
+/* LİNKLER */
+.links { width: 100%; max-width: 400px; }
+.link-card {
+    background: #222;
+    display: flex; align-items: center; justify-content: center;
+    padding: 18px; margin-bottom: 15px;
+    text-decoration: none; color: white; font-weight: bold;
+    border-radius: 15px; transition: all 0.3s ease;
+    border: 1px solid #333;
+}
+
+/* Özel Renkler */
+.yt-color:hover { background: #FF0000 !important; color: white !important; }
+.prog-card { border-left: 5px solid #ff8c00; }
+.contact-btn { opacity: 0.7; margin-top: 20px; }
+
+.link-card:hover {
+    transform: translateY(-5px);
+    background: #ff8c00;
+    color: #000;
+    box-shadow: 0px 10px 25px rgba(255, 140, 0, 0.4);
+}
+
+.link-card i { margin-right: 12px; font-size: 20px; }
+.footer { margin-top: 40px; font-size: 12px; color: #555; }
