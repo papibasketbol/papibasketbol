@@ -28,15 +28,55 @@ body {
     100% { left: 120%; transform: rotate(1080deg); }
 }
 
-/* PROFİL */
-.profile img {
-    width: 120px; height: 120px;
-    border-radius: 50%;
-    border: 4px solid #ff7b00;
-    box-shadow: 0px 0px 20px rgba(255, 140, 0, 0.3);
+/* GENEL TASARIM - MERKEZLEME */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Her şeyi yatayda tam merkeze alır */
+    justify-content: flex-start;
+    padding: 40px 20px;
+    margin: 0;
+    min-height: 100vh;
+    text-align: center; /* Yazıları merkeze alır */
 }
-.profile h1 { color: #ff8c00; margin-top: 15px; text-transform: uppercase; }
 
+/* PROFİL ALANI GÜNCELLEME */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Fotoğrafı ve ismi merkeze çeker */
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ff8c00;
+    object-fit: cover;
+    display: block; /* Yanındaki boşlukları siler */
+    margin: 0 auto; /* Kesin merkezleme */
+}
+
+/* LİNKLERİN MERKEZDE DURMASI */
+.links {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Butonlar arası boşluk */
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* İkon ve yazıyı buton içinde ortalar */
+    text-align: center;
+}
 /* LİNKLER */
 .links { width: 100%; max-width: 400px; }
 .link-card {
@@ -58,7 +98,21 @@ body {
     background: #ff8c00;
     color: #000;
     box-shadow: 0px 10px 25px rgba(255, 140, 0, 0.4);
-}art789
+}
 
 .link-card i { margin-right: 12px; font-size: 20px; }
 .footer { margin-top: 40px; font-size: 12px; color: #555; }
+
+/* Özel Ders Kartı Stili */
+.coach-card {
+    background: linear-gradient(135deg, #ff8c00, #e67e22) !important;
+    color: #000 !important; /* Yazı siyah olsun ki turuncu üzerinde okunsun */
+    border: none !important;
+    font-size: 18px;
+    margin-bottom: 25px !important;
+}
+
+.coach-card:hover {
+    transform: scale(1.05) translateY(-5px) !important;
+    box-shadow: 0px 15px 30px rgba(255, 140, 0, 0.5) !important;
+}
