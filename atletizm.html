@@ -3,63 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atletizm Geliştirme Programı | PapiBasketball</title>
+    <title>Atletizm Geliştirme | PapiBasketball</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="papi.css">
     <style>
-        .program-detail {
-            max-width: 500px;
+        .program-container {
+            max-width: 600px;
+            width: 90%;
+            margin: 20px auto;
             text-align: center;
-            padding: 20px;
         }
-        .program-image {
-            width: 100%;
-            border-radius: 15px;
-            margin-bottom: 20px;
+
+        /* Program Kartı */
+        .atletizm-card {
+            background: linear-gradient(145deg, #1e1e1e, #121212);
             border: 2px solid #ff8c00;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(255, 140, 0, 0.2);
+            margin-bottom: 30px;
         }
-        .feature-list {
+
+        .atletizm-card h1 {
+            color: #ff8c00;
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .badge {
+            background: #ff8c00;
+            color: black;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* Özellikler */
+        .features {
             text-align: left;
-            background: #222;
+            margin: 25px 0;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+
+        .feature-item:hover {
+            background: rgba(255, 140, 0, 0.1);
+            transform: translateX(10px);
+        }
+
+        .feature-item i {
+            color: #ff8c00;
+            font-size: 20px;
+            margin-right: 15px;
+        }
+
+        /* Fiyat ve Satın Alma */
+        .price-tag {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #ffffff;
+        }
+
+        .buy-btn {
+            background: #25D366;
+            color: white;
             padding: 20px;
             border-radius: 15px;
-            margin: 20px 0;
-        }
-        .feature-list li {
-            margin-bottom: 10px;
-            list-style: none;
-        }
-        .feature-list i {
-            color: #ff8c00;
-            margin-right: 10px;
-        }
-        .back-btn {
-            display: inline-block;
-            margin-top: 20px;
-            color: #aaa;
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .buy-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 25px;
+            color: #888;
+            text-decoration: none;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
-    <div class="program-detail">
-        <h1>🚀 Atletizm Geliştirme</h1>
-        <p>Sahanın en hızlısı ve en yükseğe zıplayanı olmaya hazır mısın?</p>
-        
-        <div class="feature-list">
-            <li><i class="fas fa-check"></i> Dikey Sıçrama Teknikleri</li>
-            <li><i class="fas fa-check"></i> Patlayıcı Kuvvet Antrenmanları</li>
-            <li><i class="fas fa-check"></i> Çeviklik ve Ayak Çabukluğu</li>
-            <li><i class="fas fa-check"></i> Kondisyon Yükleme Programı</li>
+    <div class="program-container">
+        <div class="atletizm-card">
+            <span class="badge">ELITE PERFORMANCE</span>
+            <h1>ATLETİZM GELİŞTİRME</h1>
+            <p>PapiBasketball ile patlayıcı gücünü serbest bırak!</p>
+
+            <div class="features">
+                <div class="feature-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>Dikey Sıçrama & Smaç Kapasitesi</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>İlk Adım Çabukluğu & Hız</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>Fonksiyonel Basketbol Kuvveti</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>Elit Maç Kondisyonu</span>
+                </div>
+            </div>
+
+            <div class="price-tag">Kişiye Özel Program</div>
+
+            <a href="https://wa.me/905323363348" class="buy-btn" target="_blank">
+                <i class="fab fa-whatsapp" style="font-size: 24px; margin-right: 10px;"></i> 
+                WHATSAPP'TAN BİLGİ AL
+            </a>
         </div>
 
-        <a href="https://wa.me/90XXXXXXXXXX" class="link-card" style="background: #25D366; border: none;">
-            <i class="fab fa-whatsapp"></i> Bilgi Al & Satın Al
-        </a>
-
-        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Geri Dön</a>
-    </div>
+    <a href="index.html" class="back-link">
+    <i class="fas fa-arrow-left"></i> Ana Sayfaya Dön
+</a>
 
 </body>
 </html>
